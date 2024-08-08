@@ -1,6 +1,9 @@
 :root{
     --purple-200: #5913b453;
+
     --purple-300: #5A13B4;
+
+    --purple-400: #3B1270;
 }
 
 header{
@@ -15,6 +18,7 @@ a{
     text-decoration: none;
 }
 
+/*Início cabeçalho*/
 .linha{
     display: flex;
     align-items: center;
@@ -46,3 +50,28 @@ a{
     border: 1px solid var(--purple-200);
     padding:  0.3rem 0.7rem;
 }
+/*Fim Cabeçalho*/
+
+/*Início Título*/
+.marginSite{
+    margin: 2% 18%;
+}
+
+.corEscrita{
+    color: var(--purple-400);
+}
+
+.tituloSite{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+
+.subtituloSite{
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+
+/*Fim Título*/
