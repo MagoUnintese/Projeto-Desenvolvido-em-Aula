@@ -1,4 +1,5 @@
 :root{
+    --purple-200: #5913b453;
     --purple-300: #5A13B4;
 }
 
@@ -28,4 +29,20 @@ a{
 
 .corLink{
     color: var(--purple-300);
+}
+
+.inputBusca, .inputBusca:focus{
+    outline: none;
+    border: none;
+    color: var(--purple-300);
+}
+
+.inputBusca::placeholder{
+    color: var(--purple-300);
+    opacity: 0.6;
+}
+
+.bordaBusca{
+    border: 1px solid var(--purple-200);
+    padding:  0.3rem 0.7rem;
 }
