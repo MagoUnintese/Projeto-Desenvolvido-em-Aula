@@ -12,6 +12,7 @@ header{
 
 body{
     font-family: 'Montserrat';
+    margin: 0;
 }
 
 a{
@@ -54,7 +55,7 @@ a{
 
 /*Início Título*/
 .marginSite{
-    margin: 2% 18%;
+    margin: 8% 18%;
 }
 
 .corEscrita{
@@ -62,16 +63,57 @@ a{
 }
 
 .tituloSite{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
-
+.containerSubtitulo{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    min-height: 260px;
+}
 
 .subtituloSite{
     font-size: 6rem;
     font-weight: 400;
+    margin: 0;
+}
+
+.textoSite{
+    max-width: 237px;
+    align-self: flex-end;
 }
 
 
 /*Fim Título*/
+
+/*Início Escolha seu Curso*/
+
+.corFundo{
+    background-color: var(--purple-400);
+}
+
+.containerCarreira{
+    display: flex;
+    gap: 30px;
+}
+
+.titulosEcolhaCarreira{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.containerGraduacao{
+    display: flex;
+    justify-content: space-around;
+    min-width: 520px;
+}
+
+.corFundoGraduacao{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2.5%;
+}
+
+/*Fim Escolha seu Curso*/
