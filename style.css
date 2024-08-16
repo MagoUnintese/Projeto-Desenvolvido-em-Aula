@@ -1,9 +1,14 @@
 :root{
+    --purple-100: #8E35FF;
+
     --purple-200: #5913b453;
 
     --purple-300: #5A13B4;
 
     --purple-400: #3B1270;
+
+    --pink-100: #ded0f143;
+
 }
 
 header{
@@ -17,6 +22,17 @@ body{
 
 a{
     text-decoration: none;
+}
+
+footer{
+    background-color: var(--pink-100);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 5% 0;
+    margin-top: 5%;
 }
 
 /*Início cabeçalho*/
@@ -99,10 +115,16 @@ a{
     gap: 30px;
 }
 
+.posicaoPersonagem{
+    position: relative;
+    top: -70px;
+}
+
 .titulosEcolhaCarreira{
     color: white;
     font-size: 1.8rem;
     font-weight: 600;
+    margin-top: 10%;
 }
 
 .containerGraduacao{
@@ -116,4 +138,75 @@ a{
     padding: 2.5%;
 }
 
+.textoGraduacao{
+    color: white;
+}
+
+.opacidadeTextoGraduacao{
+    opacity: 0.7;
+}
+
+.pesoFonteTextoGraduacao{
+    font-weight: 600;
+}
+
+.containerBotoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.opacidadeSkillGraduacao{
+    opacity: 0.55;
+}
+
+.tamanhoEstrela{
+    width: 17px;
+    height: 16px;
+}
 /*Fim Escolha seu Curso*/
+
+/*Início Botão Inscrever-se*/
+.posicaoInscreverSe{
+    position: relative;
+    top: -205px;
+    margin: 0 18%;
+}
+
+.botaoInscreverSe{
+    background-color: var(--purple-100);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+
+    box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.7);
+
+    transition: background-color 0.4s ease;
+}
+
+.botaoInscreverSe:hover{
+    background-color: var(--purple-300);
+}
+
+/*Fim Botão Inscrever-se*/
+
+
+/*Início Cursos Gratuitos*/
+.marginSiteSecundaria{
+    margin: -5% 18% 0 18%;
+}
+
+.botaoCursoGratuito{
+    transition: transform 0.5s ease;
+}
+
+.botaoCursoGratuito:hover{
+    transform:scale(1.06);
+}
+/*Fim Cursos Gratuitos*/
