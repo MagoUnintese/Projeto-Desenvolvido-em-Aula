@@ -12,25 +12,42 @@
 
     <title>Gestão de Performance</title>
 </head>
-<body>
+<body id="body">
     <header>
-        <nav class="linha">
-            <div class="linha gapCabecalho">
+        <button onclick="trocarTema()">tema</button>
+
+        <div class="menuDesktop">
+            <nav class="linha">
+                <div class="linha gapCabecalho">
+                    <img src="img/logo.png" alt="Logo Uníntese">
+                    <div class="linha">
+                        <a class="corLink" href="*">Graduação</a>
+                        <a class="corLink" href="*">Blog</a>
+                    </div>
+                </div>
+                <div class="linha gapCabecalho">
+                    <div class="linha bordaBusca" style="gap: 0">
+                        <input class="inputBusca" placeholder="Buscar" type="text" name="busca">
+                        <img src="img/lupa.svg" alt="Lupa">
+                    </div>
+                    
+                    <a class="corLink" href="*"><img src="img/cadeado.svg" alt="Cadeado">&nbsp;&nbsp;Ambiente Virtual</a>
+                </div>  
+            </nav>
+        </div>
+        <div class="menuMobile">
+            <div>
                 <img src="img/logo.png" alt="Logo Uníntese">
-                <div class="linha">
-                    <a class="corLink" href="*">Graduação</a>
-                    <a class="corLink" href="*">Blog</a>
-                </div>
+                <button class="botaoMenu" onclick="chamaMenu()">☰</button>
             </div>
-            <div class="linha gapCabecalho">
-                <div class="linha bordaBusca" style="gap: 0">
-                    <input class="inputBusca" placeholder="Buscar" type="text" name="busca">
-                    <img src="img/lupa.svg" alt="Lupa">
-                </div>
-                
-                <a class="corLink" href="*"><img src="img/cadeado.svg" alt="Cadeado">&nbsp;&nbsp;Ambiente Virtual</a>
-            </div>  
-        </nav>
+            <nav id="opcoesMenu">
+                <ul>
+                    <li><a class="corLink" href="*">Graduação</a></li>
+                    <li><a class="corLink" href="*">Blog</a></li>
+                    <li><a class="corLink" href="*"><img src="img/cadeado.svg" alt="Cadeado">&nbsp;&nbsp;Ambiente Virtual</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="marginSite" title="Faculdade.Digital">
@@ -46,6 +63,7 @@
         <section class="corFundo">
             <div class="marginSite containerCarreira">
                 <img class="posicaoPersonagem" src="img/personagem.jpg" alt="Homem sentado utilizando um notebook">
+                <img class="posicaoPersonagemMobile" src="img/personagem.jpg" alt="Homem sentado utilizando um notebook">
                 <div>
                     <h2 class="titulosEcolhaCarreira">Escolha sua Carreira</h2>
                     <div class="containerGraduacao corFundoGraduacao">
@@ -140,8 +158,8 @@
             <h2 class="corEscrita" style="font-weight: 500;">Cursos <b>livres e gratuitos</b> para você</h2>
 
             <div style="display: flex; gap: 20px;">
-                <a class="botaoCursoGratuito" href="#"><img src="img/lideranca.jpg" alt="Peças de xadrez"></a>
-                <a class="botaoCursoGratuito" href="#"><img src="img/cargos-e-salarios.jpg" alt="Maleta com moedas ao fundo"></a>
+                <a class="botaoCursoGratuito" href="#"><img class="imgCursoGratuito" src="img/lideranca.jpg" alt="Peças de xadrez"></a>
+                <a class="botaoCursoGratuito" href="#"><img class="imgCursoGratuito" src="img/cargos-e-salarios.jpg" alt="Maleta com moedas ao fundo"></a>
             </div>
         </section>
     </main>
@@ -158,5 +176,28 @@
         </div>
         <a href="#"><img src="img/qr-code.png" alt="QR Code para Cadastro do E-MEC"></a>
     </footer>
+
+    <script>
+        var menu = document.getElementById("opcoesMenu");
+
+        var body = document.getElementById("body");
+    
+        function chamaMenu(){
+            if(menu.style.display == "none"){
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+        
+        function trocarTema(){
+            if (body.style.backgroundColor == "white"){
+                body.style.backgroundColor = "grey";
+            } else{
+                body.style.backgroundColor = "white";
+            }
+        }
+    </script>
 </body>
+
 </html>

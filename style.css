@@ -11,6 +11,15 @@
 
 }
 
+#body{
+    background-color: white;
+    color: var(--purple-400);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     margin: 2% 5%;
 }
@@ -36,6 +45,10 @@ footer{
 }
 
 /*Início cabeçalho*/
+.menuMobile{
+    display: none;
+}
+
 .linha{
     display: flex;
     align-items: center;
@@ -165,6 +178,10 @@ footer{
     width: 17px;
     height: 16px;
 }
+
+.posicaoPersonagemMobile{
+    display: none;
+}
 /*Fim Escolha seu Curso*/
 
 /*Início Botão Inscrever-se*/
@@ -209,4 +226,160 @@ footer{
 .botaoCursoGratuito:hover{
     transform:scale(1.06);
 }
+
+.imgCursoGratuito{
+    width: 100%;
+    height: 100%;
+}
 /*Fim Cursos Gratuitos*/
+
+
+
+/*Início Responsividade*/
+
+/*Início 1440px*/
+@media screen and (max-width: 1440px){
+    /*Início Cabeçalho - 1440px*/
+    .containerSubtitulo{
+        min-height: 210px;
+    }
+
+    .subtituloSite{
+        font-size: 4rem;
+    }
+    /*Fim Cabeçalho - 1440px*/
+
+    /*Início Botão Inscrever-se 1440px*/
+    .posicaoInscreverSe{
+        margin: 0 5% 0 18%;
+    }
+    /*Fim Botão Inscrever-se 1440px*/
+}
+/*Fim 1440px*/
+
+/*Inicio 1024px*/
+@media screen and (max-width: 1024px){
+    /*Início Titulo 1024px*/
+    .marginSite{
+        margin: 8% 10%;
+    }
+    /*Fim Titulo 1024px*/
+
+    /*Inicio Cabecalho 1024px*/
+    .containerSubtitulo	{
+        gap: 20px;
+    }
+
+    .subtituloSite{
+        font-size: 2.6rem;
+    }
+    /*Fim Cabecalho 1024px*/
+
+    /*Inicio Escolha seu Curso 1024px*/
+    .posicaoPersonagem{
+       width: 35%;
+       height: 100%;
+       top: 0;
+    }
+
+    .containerCarreira{
+        align-items: center;
+        min-height: 350px;
+        padding-bottom: 10%;
+    }
+
+    .titulosEcolhaCarreira{
+        font-size: 1.4rem;
+    }
+
+    .containerGraduacao{
+        min-width: 395px;
+    }
+
+    .textoGraduacao{
+        font-size: 0.8rem;
+    }
+    /*Fim Escolha seu Curso 1024px*/
+
+    /*Inicio Botao Inscrever-se 1024px*/
+    .posicaoInscreverSe{
+        top: -115px;
+        margin-left: 10%; 
+    }
+    /*Fim Botao Inscrever-se 1024px*/
+
+    /*Inicio Cursos Gratuitos 1024px*/
+    .marginSiteSecundaria{
+        margin: -5% 10% 0 10%; 
+    }
+    /*Fim Cursos Gratuitos 1024px*/
+}
+/*Fim 1024px*/
+
+
+/*Inicio 767px*/
+@media screen and (max-width: 767px){
+    /*Inicio Titulo 767px*/
+    .menuDesktop{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+
+    #opcoesMenu{
+        display: none;
+    }
+
+    .marginSite{
+        margin: 8%;
+    }
+
+    .tituloSite{
+        font-size: 1.8rem;
+    }
+
+    .containerSubtitulo{
+        flex-wrap: wrap;
+    }
+
+    .containerSubtitulo img{
+        display: none;
+    }
+    /*Fim Titulo 767px*/
+
+    /*Inicio Escolha seu Curso 767px*/
+    .posicaoPersonagem{
+        display: none;
+    }
+
+    .containerGraduacao{
+        min-width: 300px;
+        align-items: center;
+    }
+
+    .textoGraduacao{
+        font-size: 0.6rem;
+    }
+    /*Fim Escolha seu Curso 767px*/
+
+    /*Inicio Botao Inscrever-se 767px*/
+    .posicaoInscreverSe{
+        top: -70px;
+        margin: 0 10%;
+    }
+
+    .botaoInscreverSe{
+        font-size: 2rem;
+        padding: 1.2rem 0;
+    }
+    /*Fim Botao Inscrever-se 767px*/
+
+    /*Inicio Rodape 767px*/
+    footer{
+        flex-wrap: wrap;
+    }
+    /*Fim Rodape 767px*/
+}
+/*Fim 767px*/
